@@ -27,7 +27,27 @@ static files.
 
 ## Using the ace editor for your own plugins
 
-...
+To make your own plugin aware of djangocms-static-ace you will need to define a custom form for your 
+plugin (see xxx) and add a `Media` class
+
+    from django.conf import settings as django_settings
+    from django import forms
+
+    from ... import MyFormModel
+
+
+    class MyPluginForm(forms.ModelForm):
+
+        class Media:
+        js = (
+            "admin/vendor/ace/ace.js"
+            if "djangocms_static_ace" in django_settings.INSTALLED_APPS
+            else "https://cdnjs.cloudflare.com/ajax/libs/ace/1.9.6/ace.js",
+        )
+
+        class Meta:
+            model = MyFormModel
+
 
 ## Versions
 
