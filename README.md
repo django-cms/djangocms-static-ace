@@ -39,11 +39,11 @@ plugin and add a `Media` class
     class MyPluginForm(forms.ModelForm):
 
         class Media:
-        js = (
-            "admin/vendor/ace/ace.js"
-            if "djangocms_static_ace" in django_settings.INSTALLED_APPS
-            else "https://cdnjs.cloudflare.com/ajax/libs/ace/1.9.6/ace.js",
-        )
+            js = (
+                "admin/vendor/ace/ace.js"
+                if "djangocms_static_ace" in django_settings.INSTALLED_APPS
+                else "https://cdnjs.cloudflare.com/ajax/libs/ace/1.9.6/ace.js",
+            )
 
         class Meta:
             model = MyFormModel
