@@ -49,6 +49,14 @@ plugin (see xxx) and add a `Media` class
             model = MyFormModel
 
 
+Finally, you need to point your plugin's `form` attribute to `MyPluginForm`.
+
+    class MyPlugin(CMSPluginBase):
+        ...
+        form = MyPluginForm
+        ...
+
+
 ## Versions
 
 Currently, django CMS uses ace 1.9.6
