@@ -28,7 +28,7 @@ static files.
 ## Using the ace editor for your own plugins
 
 To make your own plugin aware of djangocms-static-ace you will need to define a custom form for your 
-plugin (see xxx) and add a `Media` class
+plugin and add a `Media` class
 
     from django.conf import settings as django_settings
     from django import forms
@@ -47,6 +47,7 @@ plugin (see xxx) and add a `Media` class
 
         class Meta:
             model = MyFormModel
+            exclude = ()
 
 
 Finally, you need to point your plugin's `form` attribute to `MyPluginForm`.
