@@ -11,19 +11,19 @@ This app is a conditional dependency of, potentially amongst others, `djangocms-
 
 ## Installation
 
-The typical installation adds the `[static-ace]` optional argument to the add requiring ace, e.g., 
+The typical installation adds the `[static-ace]` optional argument to the app requiring the ace code editor, e.g., 
 `djangocms-frontend[static-ace]`. If needed it can be installed explicitly by `pip install djangocms-static-ace`.
 
-Finally, to make the static ace files available, they need to be declared in the projects `INSTALLED_APPS` setting:
-
+Finally, to make the static ace files available, `djangocms_static_ace` needs to be explicitly declared in the projects 
+`INSTALLED_APPS` setting (in the project's `settings.py`):
+ 
     INSTALLED_APPS = [
         ...,
-        "djangocms-static-ace",
+        "djangocms_static_ace",
         ...,
     ]
 
-Once made available, compliant apps will load the ace editor locally from
-static files.
+Once made available, compliant apps will load the ace editor locally from static files.
 
 ## Using the ace editor for your own plugins
 
