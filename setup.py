@@ -27,7 +27,7 @@ setup(
     version=__version__,
     author="fsbraun",
     author_email="fsbraun@gmx.de",
-    url="https://github.com/fsbraun/djangocms-frontend",
+    url="https://github.com/django-cms/djangocms-static-ace",
     license="MIT license",
     description=f"Adds ace {__ace__version__} to static files.",
     long_description=open("README.md").read(),
