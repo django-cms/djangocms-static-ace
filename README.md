@@ -60,4 +60,4 @@ Finally, you need to point your plugin's `form` attribute to `MyPluginForm`.
 
 ## Versions
 
-Currently, django CMS uses ace 1.9.6
+Currently, django CMS uses ace 1.44.0
